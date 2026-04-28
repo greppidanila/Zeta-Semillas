@@ -47,9 +47,11 @@ export default function QuienesSomosPage() {
                             <a href={`mailto:${member.email}`} className="text-brand-green font-display font-medium text-sm hover:text-brand-mint transition-colors">{member.email}</a>
                         </div>
                         <div className="flex gap-4 justify-center md:justify-start mt-2">
-                            <a href="#" className="p-2 bg-brand-green text-white rounded hover:bg-brand-mint hover:text-brand-green transition-all shadow-md">
-                                <Linkedin size={18} />
-                            </a>
+                            {member.linkedin && (
+                                <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="p-2 bg-brand-green text-white rounded hover:bg-brand-mint hover:text-brand-green transition-all shadow-md">
+                                    <Linkedin size={18} />
+                                </a>
+                            )}
                             <a href={`mailto:${member.email}`} className="p-2 bg-brand-green text-white rounded hover:bg-brand-mint hover:text-brand-green transition-all shadow-md">
                                 <Mail size={18} />
                             </a>
@@ -78,7 +80,9 @@ export default function QuienesSomosPage() {
                     <p className="text-lg md:text-xl leading-relaxed">
                         Invertimos en I+D porque estamos convencidos que es el mejor camino de largo plazo para traer valor al productor. Buscamos lograr híbridos adaptados a las 3 regiones girasoleras de Argentina, con sanidad, estabilidad, materia grasa y rinde. En 2023 estamos instalando un invernáculo para realizar “trait introgression” y accedimos a una línea de financiamiento para equipar nuestros laboratorios con la última tecnología. Tenemos alianzas estratégicas con laboratorios de USA y Europa y con bancos de germoplasma de España, USA, Portugal y Francia. En 2023 logramos el primer registro de girasol en Europa.
                     </p>
-                    {/* ... more text ... */}
+                    <p className="text-lg md:text-xl leading-relaxed">
+                        Contamos también con 4 localidades de testing donde testeamos nuestro pipeline de híbridos para los próximos 5 años contra los mejores del mercado. Queremos partners comerciales que crean en las relaciones de largo plazo, conozcan el mercado de semillas y entiendan el desarrollo de híbridos junto al productor.
+                    </p>
                  </div>
 
                  <div className="pt-12 border-t border-white/10 mt-8">

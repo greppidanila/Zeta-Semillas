@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { LucideIcon, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function ContactSection() {
   return (
@@ -25,25 +25,26 @@ export default function ContactSection() {
             
             <div className="flex flex-col gap-10">
               <ContactInfoItem 
-                  icon={<MapPin className="text-white" size={24} />} 
+                  icon={MapPin} 
                   title="SUCURSAL CENTRAL" 
                   content="Chacabuco 670 Dto 6, San Isidro (CP 1642)\nBuenos Aires, Argentina" 
                   accentColor="bg-brand-mint"
               />
               <ContactInfoItem 
-                  icon={<Phone className="text-white" size={24} />} 
+                  icon={Phone} 
                   title="CENTRAL TELEFÓNICA" 
                   content="(11) 3938-0445 / (11) 5007-5162" 
                   accentColor="bg-brand-green"
               />
               <ContactInfoItem 
-                  icon={<Mail className="text-white" size={24} />} 
+                  icon={Mail} 
                   title="CORREO ELECTRÓNICO" 
                   content="sz@zetasemillas.com" 
                   accentColor="bg-accent-stine"
               />
             </div>
           </motion.div>
+
 
           {/* Contact Form (Advanta Style) */}
           <motion.div
@@ -87,11 +88,11 @@ export default function ContactSection() {
   );
 }
 
-function ContactInfoItem({ icon, title, content, accentColor }: { icon: React.ReactNode; title: string, content: string, accentColor?: string }) {
+function ContactInfoItem({ icon: Icon, title, content, accentColor }: { icon: LucideIcon; title: string, content: string, accentColor?: string }) {
     return (
         <div className="flex gap-6 items-start">
             <div className={`w-12 h-12 ${accentColor || 'bg-brand-green'} rounded-lg flex items-center justify-center shrink-0 shadow-lg`}>
-                {icon}
+                <Icon className="text-white" size={24} />
             </div>
             <div>
                 <h4 className="text-brand-green font-display font-bold text-sm tracking-widest mb-2 uppercase">{title}</h4>

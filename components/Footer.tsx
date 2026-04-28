@@ -32,7 +32,7 @@ export default function Footer() {
             <div className="flex flex-col gap-4 text-white/60 text-sm">
                 <Link href="/productos" className="hover:text-white transition-colors">Híbridos</Link>
                 <Link href="/quienes-somos" className="hover:text-white transition-colors">Quiénes Somos</Link>
-                <Link href="/catalogo" className="hover:text-white transition-colors">Catálogo Digital</Link>
+                <Link href="/catalogo-2026.pdf" className="hover:text-white transition-colors">Catálogo Digital</Link>
             </div>
           </div>
 

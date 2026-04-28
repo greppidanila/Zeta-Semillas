@@ -3,9 +3,8 @@ export const NAV_LINKS = [
   { label: 'INICIO', href: '/' },
   { label: 'PRODUCTOS', href: '/productos' },
   { label: 'DÓNDE ESTAMOS', href: '/#donde-estamos' },
-  { label: 'CLIENTES', href: '/clientes' },
   { label: 'QUIÉNES SOMOS', href: '/quienes-somos' },
-  { label: 'CATÁLOGO', href: '/catalogo' },
+  { label: 'CATÁLOGO 2026', href: '/catalogo-2026.pdf' },
   { label: 'CONTACTO', href: '/#contacto' },
 ];
 
@@ -43,17 +42,30 @@ export const PRODUCTS = [
     category: 'girasol',
     name: 'ZT 74H78 CL',
     image: '/imgi_3_zeta-semillas_paquete-girasol-99.png',
-    description: 'NUEVO. Mercado: Alto Oleico | Tecnología: Clearfield | Materia grasa: Muy Alta. Híbrido equilibrado con excelente comportamiento sanitario.',
+    description: 'NUEVO. Excepcional potencial de rendimiento y estabilidad en la producción de ácido oléico. Ciclo medio.',
     specs: {
       mercado: 'Alto Oleico',
-      tecnologia: 'Clearfield',
+      tecnologia: 'Clearfield®',
       materiaGrasa: 'Muy Alta',
-      ciclo: 'Floración 71 días | Madurez 124 días',
-      densidad: '4.5 – 5 (óptima) / 3.5 – 4 (no óptima)',
-      altura: 'Intermedia',
-      capitulo: 'Descendente',
-      enfermedades: 'Downy Mildew (Alta), Verticillium (Tolerante), Esclerotinia (Media), Phomopsis (Tolerante), Vuelco (Excelente)',
-      presentacion: '180.000 semillas'
+      ciclo: 'Medio (71 días floración)',
+      madurez: '124 días',
+      densidad: '4,5 - 5 pl/m2',
+      enfermedades: 'Downy Mildew (TA), Verticillium (T), Esclerotinia (TM), Phomopsis (T), Vuelco (Excelente)'
+    }
+  },
+  {
+    id: 'zt-7677-cl-ao',
+    category: 'girasol',
+    name: 'ZT 7677 CL AO',
+    image: '/imgi_3_zeta-semillas_paquete-girasol-99.png',
+    description: 'Excepcional potencial de rendimiento y contenido de materia grasa. Máxima estabilidad en la producción de ácido Oleico. Ciclo largo.',
+    specs: {
+      mercado: 'Alto Oleico',
+      tecnologia: 'Clearfield®',
+      materiaGrasa: 'Muy Alta',
+      ciclo: 'Largo (80 días floración)',
+      madurez: '136 días',
+      enfermedades: 'Downy Mildew (TA), Verticillium (TA), Esclerotinia (TM), Phomopsis (TM), Vuelco (Excelente)'
     }
   },
   {
@@ -61,26 +73,14 @@ export const PRODUCTS = [
     category: 'girasol',
     name: 'ZT 74H55 CL',
     image: '/imgi_3_zeta-semillas_paquete-girasol-99.png',
-    description: 'Mercado: Alto Oleico | Tecnología: Clearfield | Materia grasa: Muy Alta. Destacada emergencia y vigor inicial.',
+    description: 'Alto potencial de rendimiento con excepcional contenido de materia grasa y estabilidad en la producción de ácido Oleico. Ciclo medio.',
     specs: {
       mercado: 'Alto Oleico',
-      tecnologia: 'Clearfield',
+      tecnologia: 'Clearfield®',
       materiaGrasa: 'Muy Alta',
-      ciclo: 'Floración 69 días | Madurez 120 días',
-      altura: 'Intermedia',
-      enfermedades: 'Downy Mildew (Alta), Verticillium (Alta), Esclerotinia (Media), Phomopsis (Tolerante), Vuelco (Excelente)',
-      presentacion: '180.000 semillas'
-    }
-  },
-  {
-    id: 'zt-74l74-cl',
-    category: 'girasol',
-    name: 'ZT 74L74 CL',
-    image: '/imgi_3_zeta-semillas_paquete-girasol-99.png',
-    description: 'NUEVO. Tecnología: Clearfield. Incorporación reciente al pipeline de alto rendimiento.',
-    specs: {
-      tecnologia: 'Clearfield',
-      presentacion: '180.000 semillas'
+      ciclo: 'Medio (69 días floración)',
+      madurez: '120 días',
+      enfermedades: 'Downy Mildew (TA), Verticillium (TA), Esclerotinia (TM), Phomopsis (T), Vuelco (Excelente)'
     }
   },
   {
@@ -88,10 +88,44 @@ export const PRODUCTS = [
     category: 'girasol',
     name: 'ZT 7500 CL',
     image: '/imgi_3_zeta-semillas_paquete-girasol-99.png',
-    description: 'Tecnología: Clearfield. (También ZT 75L50). Híbrido versátil con excelente adaptación regional.',
+    description: 'NUEVO. Alto potencial de rendimiento y elevado contenido de materia grasa. Diseñado para ambientes de alto potencial. Ciclo largo.',
     specs: {
-      tecnologia: 'Clearfield',
-      presentacion: '180.000 semillas'
+      mercado: 'Linoleico',
+      tecnologia: 'Clearfield®',
+      materiaGrasa: 'Muy Alta',
+      ciclo: 'Largo (75 días floración)',
+      madurez: '130 días',
+      enfermedades: 'Downy Mildew (S), Verticillium (T), Esclerotinia (TM), Phomopsis (TM), Vuelco (Excelente)'
+    }
+  },
+  {
+    id: 'zt-74l74-cl',
+    category: 'girasol',
+    name: 'ZT 74L74 CL',
+    image: '/imgi_3_zeta-semillas_paquete-girasol-99.png',
+    description: 'Alto potencial de rendimiento y contenido de materia grasa. Buen comportamiento a Phomopsis de tallo y capítulo. Ciclo medio.',
+    specs: {
+      mercado: 'Linoleico',
+      tecnologia: 'Clearfield®',
+      materiaGrasa: 'Muy Alta',
+      ciclo: 'Medio (73 días floración)',
+      madurez: '126 días',
+      enfermedades: 'Downy Mildew (TA), Verticillium (TA), Esclerotinia (TM), Phomopsis (TA), Vuelco (Excelente)'
+    }
+  },
+  {
+    id: 'zt-7699-cl',
+    category: 'girasol',
+    name: 'ZT 7699 CL',
+    image: '/imgi_3_zeta-semillas_paquete-girasol-99.png',
+    description: 'Excepcional potencial de rendimiento y contenido de materia grasa. Máxima productividad en ambientes de alto potencial. Ciclo largo.',
+    specs: {
+      mercado: 'Linoleico',
+      tecnologia: 'Clearfield®',
+      materiaGrasa: 'Muy Alta',
+      ciclo: 'Largo (81 días floración)',
+      madurez: '138 días',
+      enfermedades: 'Downy Mildew (S), Verticillium (T), Esclerotinia (TM), Phomopsis (TM), Vuelco (Excelente)'
     }
   },
   // SORGO
@@ -100,17 +134,15 @@ export const PRODUCTS = [
     category: 'sorgo',
     name: 'ZT 709 DP',
     image: '/imgi_4_zeta-semillas_paquete-sorgo-99.png',
-    description: 'NUEVO. Sorgo Doble Propósito tolerante a Pulgón Amarillo. Excelente estabilidad y sanidad foliar.',
+    description: 'NUEVO. Ciclo intermedio-largo. Tolerante a pulgón amarillo. Máxima producción de grano. Aptitud silera y planteos diferidos.',
     specs: {
-      uso: 'Doble Propósito / Tolerante a Pulgón Amarillo',
-      ciclo: 'Floración 77 días',
-      densidad: '150.000 – 180.000 pl/ha',
-      altura: '195 – 200 cm',
+      uso: 'DP / Pulgón Amarillo',
+      ciclo: '77 días floración',
       tallo: 'Dulce',
-      panoja: 'Semi compacta',
-      grano: 'Marrón / Taninos Alto',
-      enfermedades: 'MDMV (Alta), Pulgón Verde (Alta), Roya (Media), Fusarium (Media), Hongos de Panoja (Tolerante)',
-      presentacion: '600.000 sem/bolsa'
+      panoja: 'Semi Compacta',
+      grano: 'Marrón (Taninos Alto)',
+      altura: '195 - 200 cm',
+      enfermedades: 'Roya (TM), Fusarium (TM), Downy Mildew (TM), Virus (TA), Pulgón Verde (TA)'
     }
   },
   {
@@ -118,10 +150,42 @@ export const PRODUCTS = [
     category: 'sorgo',
     name: 'ZT 718 DP',
     image: '/imgi_4_zeta-semillas_paquete-sorgo-99.png',
-    description: 'Uso: DP (Doble Propósito). Híbrido rústico con gran capacidad de producción de biomasa.',
+    description: 'Ciclo intermedio-largo. Destacado comportamiento en zonas marginales. Aptitud silera y planteos diferidos.',
     specs: {
-      uso: 'Doble Propósito',
-      presentacion: '600.000 sem/bolsa'
+      uso: 'Silero / Granífero / Diferido',
+      ciclo: '78 días floración',
+      tallo: 'Dulce',
+      panoja: 'Semi Compacta',
+      grano: 'Marrón (Taninos Alto)',
+      altura: '180 cm'
+    }
+  },
+  {
+    id: 'zt-707',
+    category: 'sorgo',
+    name: 'ZT 707',
+    image: '/imgi_4_zeta-semillas_paquete-sorgo-99.png',
+    description: 'Ciclo corto. Ultra precoz, 100 días a cosecha. Excelente excerción de panoja y muy alto rinde. Tolerante a pájaros.',
+    specs: {
+      uso: 'Granífero',
+      ciclo: '57 días floración',
+      tallo: 'Normal',
+      panoja: 'Semi Laxa',
+      grano: 'Marrón (Taninos Alto)',
+      altura: '130 cm'
+    }
+  },
+  {
+    id: 'zt-1000',
+    category: 'sorgo',
+    name: 'ZT 1000',
+    image: '/imgi_4_zeta-semillas_paquete-sorgo-99.png',
+    description: 'Multicorte. Estabilidad productiva en todo tipo de ambientes. Apto para pastoreo directo.',
+    specs: {
+      uso: 'Forrajero Multicorte',
+      ciclo: '72 días floración',
+      tallo: 'Dulce',
+      altura: '250 cm'
     }
   },
   {
@@ -129,10 +193,13 @@ export const PRODUCTS = [
     category: 'sorgo',
     name: 'ZT 55T20 AZ',
     image: '/imgi_4_zeta-semillas_paquete-sorgo-99.png',
-    description: 'Uso: AZ (Alta Zafra). Ciclo optimizado para siembras tardías o de segunda.',
+    description: 'Ciclo largo. Silero azucarado. Estabilidad productiva con alto potencial en grano y abundante foliosidad.',
     specs: {
-      uso: 'Alta Zafra',
-      presentacion: '600.000 sem/bolsa'
+      uso: 'Silero / Diferido / Azucarado',
+      ciclo: '85 días floración',
+      panoja: 'Compacta',
+      grano: 'Marrón (Taninos Alto)',
+      altura: '250 - 280 cm'
     }
   },
   // MAIZ
@@ -141,38 +208,15 @@ export const PRODUCTS = [
     category: 'maiz',
     name: 'ZT 1105',
     image: '/imgi_5_zeta-semillas_paquete-maiz-99.png',
-    description: 'Excelente rinde y estabilidad en ambientes templados. Tecnología BTRG para control de malezas y orugas.',
+    description: 'Híbrido Semidentado Duro. Doble Propósito. Excelente stay green y rápida velocidad de secado. Altísimo potencial.',
     specs: {
-      tecnologia: 'BTRG',
-      mercado: 'Grano',
-      ciclo: 'Intermedio',
-      resistencia: 'Vuelco y Quebrado'
-    }
-  },
-  {
-    id: 'zt-2200-vip3',
-    category: 'maiz',
-    name: 'ZT 2200 VIP3',
-    image: '/imgi_5_zeta-semillas_paquete-maiz-99.png',
-    description: 'Híbrido tropical de alto potencial. Máxima protección con tecnología Agrisure Viptera 3.',
-    specs: {
-      tecnologia: 'VIP 3',
-      mercado: 'Grano/Silo',
-      ciclo: 'Largo',
-      resistencia: 'Enfermedades foliares'
-    }
-  },
-  {
-    id: 'zt-1088-pw',
-    category: 'maiz',
-    name: 'ZT 1088 PW',
-    image: '/imgi_5_zeta-semillas_paquete-maiz-99.png',
-    description: 'Estabilidad extrema en diferentes ambientes. Ideal para planteos de media-alta tecnología.',
-    specs: {
-      tecnologia: 'PowerCore®',
-      mercado: 'Grano',
-      ciclo: 'Intermedio-Corto',
-      resistencia: 'Vuelco (Excelente)'
+      tecnologia: 'RR (GTS) / Diatraea',
+      tipo: 'Simple modificado',
+      estabilidad: 'Alta',
+      ciclo: 'Intermedio (72-75 días floración)',
+      madurez: '120 días',
+      densidad: '45-75.000 sem/ha',
+      grano: 'Semidentado Amarillo'
     }
   }
 ];
@@ -183,20 +227,23 @@ export const TEAM = [
     role: 'GERENTE GENERAL',
     email: 'zapiolasantiago@zetasemillas.com',
     phone: '+54 9 11 5007-5162',
-    img: '/imgi_2_SANTIAGO-ZAPIOLA.jpg'
+    img: '/imgi_2_SANTIAGO-ZAPIOLA.jpg',
+    linkedin: 'https://www.linkedin.com/in/santiago-zapiola-9a5bb919a/'
   },
   {
     name: 'LUCAS ZAPIOLA',
     role: 'GERENTE DE OPERACIONES',
     email: 'lz@zetasemillas.com',
     phone: '+54 9 11 2000-7960',
-    img: '/imgi_3_LUCAS-ZAPIOLA.jpg'
+    img: '/imgi_3_LUCAS-ZAPIOLA.jpg',
+    linkedin: 'https://www.linkedin.com/in/lucas-zapiola-62a00b18a/'
   },
   {
     name: 'SANTIAGO ZAPIOLA (h)',
     role: 'GERENTE COMERCIAL',
     email: 'sz@zetasemillas.com',
     phone: '+54 9 11 3104-0042',
-    img: '/imgi_4_SANTIAGO-ZAPIOLA-h.jpg'
+    img: '/imgi_4_SANTIAGO-ZAPIOLA-h.jpg',
+    linkedin: 'https://www.linkedin.com/in/santiago-zapiola-073535128/'
   }
 ];

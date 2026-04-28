@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Linkedin, Mail, Phone } from 'lucide-react';
 import { TEAM } from '@/lib/constants';
 
 export default function AboutBrief() {
@@ -37,10 +38,10 @@ export default function AboutBrief() {
                className="flex flex-col gap-6 max-w-lg mb-16"
             >
                <p className="text-brand-green/80 font-display text-lg leading-relaxed">
-                 Somos una empresa <span className="font-bold text-brand-green">100% Argentina</span> enfocada en el mejoramiento genético y comercialización de híbridos.
+                 Expertos en <span className="font-bold text-brand-green">genética de girasol</span> con más de 35 años de trayectoria en el mercado nacional e internacional.
                </p>
                <p className="text-brand-green/60 text-base leading-relaxed">
-                 Desde 2006, invertimos en programas propios de R&D para entregar germoplasma adaptado a cada ambiente, asegurando rentabilidad y estabilidad para el productor.
+                 Invertimos en I+D propio para desarrollar híbridos adaptados con tecnología de punta, logrando estabilidad y rinde para el productor argentino y mercados de exportación.
                </p>
             </motion.div>
 
@@ -70,14 +71,15 @@ export default function AboutBrief() {
 
         <div className="relative z-10 flex flex-col items-center lg:items-end h-full justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-2xl">
-                 {TEAM.map((member, idx) => (
+                 {TEAM.map((member) => (
                    <TeamMember 
-                    key={idx}
+                    key={member.name}
                     name={member.name} 
                     role={member.role} 
                     img={member.img}
                     email={member.email}
                     phone={member.phone}
+                    linkedin={member.linkedin}
                    />
                  ))}
                  
@@ -96,7 +98,7 @@ export default function AboutBrief() {
   );
 }
 
-function TeamMember({ name, role, img, email, phone }: { name: string; role: string; img: string; email?: string; phone?: string }) {
+function TeamMember({ name, role, img, email, phone, linkedin }: { name: string; role: string; img: string; email?: string; phone?: string; linkedin?: string }) {
     return (
         <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
@@ -120,8 +122,23 @@ function TeamMember({ name, role, img, email, phone }: { name: string; role: str
             <div>
                 <h4 className="text-white font-display font-bold text-sm tracking-tight">{name}</h4>
                 <p className="text-accent-stine text-[10px] font-bold tracking-[0.1em] uppercase mt-1">{role}</p>
-                {phone && <p className="text-white/40 text-[10px] mt-2 font-medium">{phone}</p>}
-                {email && <p className="text-white/40 text-[10px] font-medium break-all">{email}</p>}
+                <div className="flex gap-3 mt-3">
+                    {linkedin && (
+                        <a href={linkedin} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-accent-stine transition-colors">
+                            <Linkedin size={14} />
+                        </a>
+                    )}
+                    {email && (
+                        <a href={`mailto:${email}`} className="text-white/40 hover:text-accent-stine transition-colors">
+                            <Mail size={14} />
+                        </a>
+                    )}
+                    {phone && (
+                        <a href={`tel:${phone}`} className="text-white/40 hover:text-accent-stine transition-colors">
+                            <Phone size={14} />
+                        </a>
+                    )}
+                </div>
             </div>
         </motion.div>
     )
